@@ -5,11 +5,13 @@
 </p>
 
 <p align="center">
-  <a href="./demo.mp4"><strong>Watch the bundled demo video</strong></a>
+  <a href="./demo.mp4">
+    <img src="./demo.gif" alt="cli-paste demo" width="100%" />
+  </a>
 </p>
 
 <p align="center">
-  <sub>The repository includes <code>demo.mp4</code> so visitors can clone the project and open the exact recorded workflow.</sub>
+  <sub>Click the GIF to open the full <code>demo.mp4</code> recording.</sub>
 </p>
 
 <p align="center">
@@ -43,8 +45,8 @@ It is built for Windows-first terminal workflows around tools such as Codex, Cla
 
 ## Demo
 
-- Bundled repository video: [demo.mp4](./demo.mp4)
-- The committed demo file is small enough to keep in the repository and can be opened directly from GitHub
+- Inline README preview: [demo.gif](./demo.gif)
+- Full recorded workflow: [demo.mp4](./demo.mp4)
 
 ## Tech Stack
 
@@ -125,6 +127,7 @@ The terminal detector uses both process names and window classes. It is intended
 |-- gui.py           Start or stop UI, cache settings, and startup task management
 |-- start.bat        Windows entry point for local use
 |-- requirements.txt Runtime Python dependencies
+|-- demo.gif         README preview animation
 `-- demo.mp4         Bundled demo video linked from this README
 ```
 
