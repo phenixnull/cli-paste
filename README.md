@@ -61,6 +61,16 @@ Runtime settings:
 - Default cache directory is `%USERPROFILE%\Pictures\CLI_temp`
 - `Run at login` creates a Windows Task Scheduler entry for the background worker
 
+### Custom cache path
+
+`cli-paste` does not force a fixed paste cache directory.
+
+- Default image cache path: `%USERPROFILE%\Pictures\CLI_temp`
+- Open the GUI and click `Settings`
+- Choose any writable folder you want to use for pasted images
+- The chosen path is saved to `%APPDATA%\cli_paste\settings.json`
+- If the background worker is already running, the GUI restarts it so the new cache path takes effect immediately
+
 ## Supported terminals
 
 The terminal detector uses both process names and window classes. It is intended to work with:
@@ -84,7 +94,6 @@ bootstrap.py     Creates/repairs the venv and launches the GUI
 cli_paste.py     Low-level keyboard and mouse hooks, clipboard image handling
 gui.py           Start/stop UI, cache settings, and startup task management
 start.bat        Entry point for local use on Windows
-tests/           Lightweight unit tests for config and GUI helpers
 ```
 
 ## License
